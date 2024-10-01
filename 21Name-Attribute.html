@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Search</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #4285f4;
+        margin-bottom: 20px;
+      }
+      form {
+        max-width: 400px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 5px 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        display: inline-block;
+        background-color: #4285f4;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #357ae8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Google Search</h1>
+
+    <form action="https://www.google.co.in/search" method="get" target="_blank">
+      <div class="form-group">
+        <label for="search">Search Google:</label>
+        <input
+          type="text"
+          id="search"
+          name="q"
+          placeholder="Type your search here..."
+          required
+        />
+      </div>
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Input Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="range"] {
+            width: 100%;
+        }
+        .value {
+            font-weight: bold;
+            color: #4285f4;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Select a Value</h1>
+
+<form action="/submit_value" method="POST">
+    <div class="form-group">
+        <label for="rangeInput">Choose a value (1-100): <span class="value" id="rangeValue">50</span></label>
+        <input type="range" id="rangeInput" name="rangeInput" min="1" max="100" value="50" oninput="updateValue(this.value)">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function updateValue(value) {
+        document.getElementById('rangeValue').textContent = value;
+    }
+</script>
+
+</body>
+</html>

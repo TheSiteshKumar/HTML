@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Select Your Favorite Fruits</h1>
+
+    <form action="/submit_fruits" method="POST">
+      <div class="form-group">
+        <input type="checkbox" id="apple" name="fruit" value="Apple" />
+        <label for="apple">Apple</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="banana" name="fruit" value="Banana" />
+        <label for="banana">Banana</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="cherry" name="fruit" value="Cherry" />
+        <label for="cherry">Cherry</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="date" name="fruit" value="Date" />
+        <label for="date">Date</label>
+      </div>
+      <div class="form-group">
+        <input
+          type="checkbox"
+          id="elderberry"
+          name="fruit"
+          value="Elderberry"
+        />
+        <label for="elderberry">Elderberry</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
