@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      table {
+        inline-size: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: start;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      caption {
+        caption-side: top;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-block-end: 10px;
+      }
+      tfoot td {
+        font-weight: bold;
+        background-color: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Food Menu</h1>
+
+    <table>
+      <caption>
+        Our Delicious Menu
+      </caption>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Margherita Pizza</td>
+          <td>₹750.00</td>
+        </tr>
+        <tr>
+          <td>Pepperoni Pizza</td>
+          <td>₹900.00</td>
+        </tr>
+        <tr>
+          <td>Cheeseburger</td>
+          <td>₹600.00</td>
+        </tr>
+        <tr>
+          <td>Grilled Chicken Sandwich</td>
+          <td>₹700.00</td>
+        </tr>
+        <tr>
+          <td>Caesar Salad</td>
+          <td>₹500.00</td>
+        </tr>
+        <tr>
+          <td>Spaghetti Carbonara</td>
+          <td>₹800.00</td>
+        </tr>
+        <tr>
+          <td>Chocolate Cake</td>
+          <td>₹300.00</td>
+        </tr>
+        <tr>
+          <td>Ice Cream Sundae</td>
+          <td>₹250.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total Items</td>
+          <td>8</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Schedule</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+      table {
+        inline-size: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      caption {
+        caption-side: top;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-block-end: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conference Schedule</h1>
+
+    <table>
+      <caption>
+        Day 1 Schedule
+      </caption>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Track A</th>
+          <th>Track B</th>
+          <th>Track C</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">9:00 - 10:30</td>
+          <td colspan="2">Keynote Speech</td>
+          <td>Workshop 1</td>
+        </tr>
+        <tr>
+          <td>Panel Discussion</td>
+          <td>Breakout Session</td>
+          <td>Workshop 2</td>
+        </tr>
+        <tr>
+          <td>10:30 - 11:00</td>
+          <td colspan="3">Networking Break</td>
+        </tr>
+        <tr>
+          <td rowspan="2">11:00 - 12:30</td>
+          <td>Session A1</td>
+          <td>Session B1</td>
+          <td rowspan="2">Workshop 3</td>
+        </tr>
+        <tr>
+          <td>Session A2</td>
+          <td>Session B2</td>
+        </tr>
+        <tr>
+          <td>12:30 - 1:30</td>
+          <td colspan="3">Lunch Break</td>
+        </tr>
+        <tr>
+          <td rowspan="2">1:30 - 3:00</td>
+          <td>Session A3</td>
+          <td rowspan="2" colspan="2">Workshop 4</td>
+        </tr>
+        <tr>
+          <td>Session A4</td>
+        </tr>
+        <tr>
+          <td>3:00 - 3:30</td>
+          <td colspan="3">Afternoon Break</td>
+        </tr>
+        <tr>
+          <td rowspan="2">3:30 - 5:00</td>
+          <td>Session A5</td>
+          <td>Session B3</td>
+          <td>Workshop 5</td>
+        </tr>
+        <tr>
+          <td>Session A6</td>
+          <td>Session B4</td>
+          <td>Workshop 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">End of Day 1</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
